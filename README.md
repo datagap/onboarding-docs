@@ -1,2 +1,2 @@
-# onboarding-docs
+# Overview
 Documentation for Onboarding Platform
