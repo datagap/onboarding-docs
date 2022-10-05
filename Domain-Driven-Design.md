@@ -14,3 +14,6 @@ Both commands and events are types of message that are used to exchange data bet
 In DDD terms, these messages represent business behaviors and therefore help the system capture
 the business intent behind the message.
 
+**Process Manager** is a class that coordinates the behavior of the aggregates in the domain. A process manager subscribes to the events that the aggregates raise, and then follow a simple set of rules to determine which command or commands to send. The process manager does not contain any business logic; it simply contains logic to determine the next command to
+send. The process manager is implemented as a state machine, so when it responds to an event, it can change its internal state in addition to sending a new command.
+
